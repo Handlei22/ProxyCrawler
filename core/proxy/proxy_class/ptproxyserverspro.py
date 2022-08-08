@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup
-from core.proxy.proxy_base import ProxyBase
+from core.proxy.proxy_class.proxy_base import ProxyBase
 import re
 
 
@@ -9,6 +9,7 @@ import re
 class PtProxyServersPro(ProxyBase):
     def __init__(self):
         super().__init__()
+        self.link_name = 'pt.proxyservers.pro'
 
     def __get_pages(self, response):
         soup = BeautifulSoup(response, "html.parser")

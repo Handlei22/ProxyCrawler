@@ -1,28 +1,20 @@
-import core.proxy.proxy_class as p
+from core.proxy.proxy_class import freeproxylist, proxylistdownload, openproxy_space, ptproxyserverspro
 
 
 class Proxys:
-
-    # @staticmethod
-    # def free_proxy_list():  # Deprecated
-    #     return freeproxylists.FreeProxyList()
+    @staticmethod
+    def proxy1():
+        return freeproxylist.FreeProxyList()
 
     @staticmethod
-    def free_proxy_list2():
-        return p.freeproxylist2.FreeProxyList2()
-
-    # @staticmethod
-    # def free_proxy_cz():  # Deprecated
-    #     return freeproxycz.FreeProxyCZ()
+    def proxy2():
+        return proxylistdownload.ProxyListDownload()
 
     @staticmethod
-    def proxy_list_download():
-        return p.proxylistdownload.ProxyListDownload()
+    def proxy3():
+        return openproxy_space.OpenProxySpace()
 
     @staticmethod
-    def open_proxy_space():
-        return p.openproxy_space.OpenProxySpace()
+    def proxy4():
+        return ptproxyserverspro.PtProxyServersPro()
 
-    @staticmethod
-    def pt_proxy_servers_pro():
-        return p.ptproxyserverspro.PtProxyServersPro()

@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup
-from core.proxy.proxy_base import ProxyBase
+from core.proxy.proxy_class.proxy_base import ProxyBase
 import re
 
 # https://openproxy.space/
@@ -8,6 +8,7 @@ import re
 class OpenProxySpace(ProxyBase):
     def __init__(self):
         super().__init__()
+        self.link_name = 'openproxy.space'
 
     def _mount_list(self):
         protocol = ['http', 'socks4', 'socks5']

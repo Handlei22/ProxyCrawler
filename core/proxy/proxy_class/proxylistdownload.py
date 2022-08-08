@@ -1,4 +1,4 @@
-from core.proxy.proxy_base import ProxyBase
+from core.proxy.proxy_class.proxy_base import ProxyBase
 
 # https://www.proxy-list.download/
 
@@ -6,6 +6,7 @@ from core.proxy.proxy_base import ProxyBase
 class ProxyListDownload(ProxyBase):
     def __init__(self):
         super().__init__()
+        self.link_name = 'proxy-list.download'
 
     def _mount_list(self):
         protocol = ['http', 'https', 'socks4', 'socks5']
