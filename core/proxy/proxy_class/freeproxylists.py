@@ -8,7 +8,7 @@ import urllib.parse
 # www.freeproxylists.net
 
 
-class FreeProxyList:
+class FreeProxyLists:
     def __init__(self):
         self.__FIELDS = [
             'IP Address',

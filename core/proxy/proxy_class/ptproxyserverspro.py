@@ -45,7 +45,6 @@ class PtProxyServersPro(ProxyBase):
                 row_header = rows[:1][0].find_all('th')
                 rows = rows[1::]
                 __FIELDS = [s.text.strip() for s in row_header]
-                print(__FIELDS)
                 idx_ip = __FIELDS.index('Endereço de IP')
                 idx_port = __FIELDS.index('Porto')
                 idx_prot = __FIELDS.index('Protocolo')
