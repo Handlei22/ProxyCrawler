@@ -1,5 +1,5 @@
 import requests
-from core.consts import consts
+from core.proxy.consts import consts
 import random
 
 
